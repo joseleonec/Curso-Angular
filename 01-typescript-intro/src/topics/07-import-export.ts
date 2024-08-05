@@ -20,6 +20,6 @@ const [total, totalTax, grandTotal] = taxCalculation(
     }
 );
 
-console.log(`Total: ${total}`);
-console.log(`Total Tax: ${totalTax}`);
-console.log(`Grand Total: ${grandTotal}`);
+// console.log(`Total: ${total}`);
+// console.log(`Total Tax: ${totalTax}`);
+// console.log(`Grand Total: ${grandTotal}`);
