@@ -44,5 +44,11 @@ const numbers: number[] = [1, 2, 3, 4, 5];
 
 // Get the first and second number from the array
 const [first, second] = numbers;
+const dbz: string[] = ["Goku", "Vegeta", "Trunks"];
 
-console.log("First: ", first);
+const [goku, vegeta, ] = dbz;
+
+const [, , trunks] = dbz;
+
+console.log("First: ", trunks);
+
