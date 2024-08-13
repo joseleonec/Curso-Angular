@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
 
+  public heroes: string[] = ['Spiderman', 'Batman', 'Superman', 'Wonder'] 
+
+  borrarUltimoHeroe(): void {
+    this.heroes.pop();
+  }
 }
