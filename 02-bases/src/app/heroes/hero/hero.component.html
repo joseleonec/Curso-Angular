@@ -1,0 +1,27 @@
+<h1>{{name}}</h1>
+
+
+<dl>
+    <td>id</td>
+    <dd>{{id}}</dd>
+    <td>name</td>
+    <dd>{{name}}</dd>
+    <td>power</td>
+    <dd>{{power}}</dd>
+    <td>alterEgo</td>
+    <dd>{{alterEgo}}</dd>
+    <td>Fullname</td>
+    <dd>{{fullName}}</dd>
+
+</dl>
+
+
+<button 
+    *ngIf="name === 'Spiderman'"
+    (click)="changeName()" 
+    class="btn btn-primary mx-2">
+    changeName
+</button>
+<button (click)="changeAlterEgo()" class="bStn btn-primary mx-2">changeAlterEgo</button>
+<button (click)="changePower()" class="btn btn-primary mx-2">changePower</button>
+<button (click)="reset()" class="btn btn-primary mx-2">reset</button>
