@@ -20,5 +20,15 @@ export class MainPageComponent {
       power: 8500
     }
   ];
+
+  addCharacter = (newCharacter: Character): void => {
+    this.characters.push(newCharacter);
+  }
+
+  deleteCharacter = (index: number): void => {
+    console.log('Deleting character', index);
+    console.log('Deleting character', this.characters[index]);
+    this.characters.splice(index, 1);
+  }
     
 }
