@@ -5,12 +5,11 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 import { ListComponent } from './components/list/gifs-list.coponent';
 
 
-
 @NgModule({
   declarations: [
     HomePageComponent,
     SearchBoxComponent,
-    ListComponent
+    ListComponent,
   ],
   imports: [
     CommonModule

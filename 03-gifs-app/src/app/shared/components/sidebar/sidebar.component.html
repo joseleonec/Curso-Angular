@@ -5,6 +5,7 @@
     *ngFor="let item of tagsSearchHistory"
     class="list-goup list-reset">
         <button 
+            (click)="searchTag(item)"
             class="list-goup-item list-goup-item-action">
             {{ item | titlecase }}
         </button>
