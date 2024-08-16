@@ -15,7 +15,6 @@ import { GifsModule } from './gifs/gifs.module';
     AppRoutingModule,
     GifsModule,
     SharedModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
