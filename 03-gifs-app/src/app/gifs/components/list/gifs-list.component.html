@@ -1,25 +1,12 @@
- <div>
-    <div>
-        <ol class="list-group">
-            <li
-            *ngFor="let item of gifs
-            let isEven = even;
-            let isOdd = odd;
-            "
-            class="list-group-item"
-            [ngClass]="{ 
-                'list-group-item-primary': isEven, 
-                'list-group-item-secondary': isOdd }"
-            >
-                <div>
-                    {{ item.title }}
-                </div>
-                <!-- <img [src]="item.url" alt="{{ item.title }}" /> -->
-            </li>
-        </ol>
+<div class="row">
+  <div 
+  *ngFor="let item of gifs"
+  class="col-md-3 col-sm-6">
+    <div class="card mb-2 text-center bg-dark">
+      <!-- TODO SHOW GIFS -->
+      <div class="card-body text-white">
+        <p class="card-text">{{item.title}}</p>
+      </div>
     </div>
-    <hr>
-    <div class="d-flex justify-content-center">
-        <button class="btn btn-primary" >Load more</button>
-    </div>
- </div>
+  </div>
+</div>

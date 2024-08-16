@@ -5,9 +5,18 @@ import { Component } from '@angular/core';
   template: `
   <h5>Search</h5>
   <input 
-  class="form-control"
-  type="text" placeholder="Search..." />
+    class="form-control"
+    type="text" 
+    placeholder="Search..." 
+    (keyup.enter)="searchTag(searchInputTxt.value)"
+    #searchInputTxt
+    />
   `,
   styleUrl: './search-box.component.css',
 })
-export class SearchBoxComponent { }
+export class SearchBoxComponent { 
+
+  searchTag(tag: string) {
+    console.log('Searching... ' + tag);
+  }
+}
